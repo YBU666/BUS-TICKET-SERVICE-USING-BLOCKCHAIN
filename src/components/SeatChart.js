@@ -39,7 +39,7 @@ const SeatChart = ({ occasion, tokenMaster, provider, setToggle }) => {
         </button>
 
         <div className="occasion__stage">
-          <strong>STAGE</strong>
+          <strong>Driver's area</strong>
         </div>
 
         {seatsTaken && Array(25).fill(1).map((e, i) =>
@@ -60,19 +60,6 @@ const SeatChart = ({ occasion, tokenMaster, provider, setToggle }) => {
           <strong>WALKWAY</strong>
         </div>
 
-        {seatsTaken && Array(Number(occasion.maxTickets) - 50).fill(1).map((e, i) =>
-          <Seat
-            i={i}
-            step={26}
-            columnStart={6}
-            maxColumns={15}
-            rowStart={2}
-            maxRows={15}
-            seatsTaken={seatsTaken}
-            buyHandler={buyHandler}
-            key={i}
-          />
-        )}
 
         <div className="occasion__spacer--2">
           <strong>WALKWAY</strong>
@@ -81,7 +68,7 @@ const SeatChart = ({ occasion, tokenMaster, provider, setToggle }) => {
         {seatsTaken && Array(25).fill(1).map((e, i) =>
           <Seat
             i={i}
-            step={(Number(occasion.maxTickets) - 24)}
+            step={(Number(occasion.maxTickets) - 99)}
             columnStart={22}
             maxColumns={5}
             rowStart={2}

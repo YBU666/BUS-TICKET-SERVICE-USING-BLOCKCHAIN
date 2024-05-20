@@ -5,17 +5,17 @@ const Sort = () => {
   return (
     <div className="sort">
       <div className="sort__select">
-        <p>Select Your Genre</p>
+        <p>Select Your Date</p>
         <img src={down} alt="Dropdown" />
       </div>
 
       <div className="sort__select">
-        <p>Select Your Dates</p>
+        <p>Select Your Destination</p>
         <img src={down} alt="Dropdown" />
       </div>
 
       <div className="sort__select">
-        <p>Select Your Distance</p>
+        <p>Select Your Bus Type</p>
         <img src={down} alt="Dropdown" />
       </div>
     </div>
