@@ -31,7 +31,7 @@ In a separate terminal execute:
 
 ### 6. Start frontend
 `$ npm run start`# BUS-TICKET-SERVICE
-# BUS-TICKET-SERVICE
+
 
 
 
